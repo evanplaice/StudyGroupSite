@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 const NavbarStyles = styled.div`
+  margin: 0 auto;
   width: 100%;
-  height: 10vh;
+  height: auto;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   h1 {
     text-align: center;
-    width: 100px;
   }
   ul {
+    width: auto;
     list-style-type: none;
     display: flex;
     flex-grow: 2;
@@ -29,7 +30,7 @@ const NavbarStyles = styled.div`
       font-size: 16px;
       cursor: pointer;
     }
-  @media (max-width: 540px){
+  @media (max-width: 720px){
     ul {
       display: none;
     }

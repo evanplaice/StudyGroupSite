@@ -1,6 +1,7 @@
 import React from 'react';
-import NavbarStyles from '../styles/NavbarStyles';
 
+import NavbarStyles from '../styles/NavbarStyles';
+import LogoIcon from '../Icons/Logo';
 
 const Navbar = () => {
   return (
@@ -9,12 +10,14 @@ const Navbar = () => {
         <li>About</li>
         <li>Projects</li>
       </ul>
-      <h1>BADR</h1>
+      <h1>
+        <LogoIcon  className="logo" height="80"/>
+      </h1>
       <ul>
         <li>Resources</li>
         <li>Group Learning</li>
       </ul>
-      <div className="hamburger">Menu</div>
+      <button className="hamburger">Menu</button>
     </NavbarStyles>
   )
 }
