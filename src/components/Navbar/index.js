@@ -11,7 +11,7 @@ const Navbar = () => {
         <li>Projects</li>
       </ul>
       <h1>
-        <LogoIcon  className="logo" height="80"/>
+        <LogoIcon className="logo" height="80" />
       </h1>
       <ul>
         <li>Resources</li>
