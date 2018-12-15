@@ -10,9 +10,9 @@ const Navbar = () => {
         <li>About</li>
         <li>Projects</li>
       </ul>
-      <h1>
-        <LogoIcon className="logo" height="80" />
-      </h1>
+
+      <LogoIcon height="100" width="100" />
+
       <ul>
         <li>Resources</li>
         <li>Group Learning</li>
