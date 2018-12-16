@@ -12,6 +12,7 @@ Our key motivation for the project is to create a site where members can see upd
 - CSS: Sass and styled components
 - Express
 - Nodejs
+- Reach Router
 
 ## Installation
 
