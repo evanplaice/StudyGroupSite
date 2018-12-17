@@ -1,31 +1,33 @@
 import styled from 'styled-components';
 
 const NavbarStyles = styled.div`
-  margin: 8px auto;
-  width: 100%;
+  margin: 16px;
+  width: 100vw;
   height: auto;
-  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   ul {
-    width: auto;
+    width: 100%;
     list-style-type: none;
     display: flex;
-    flex-grow: 2;
     justify-content: space-evenly;
+    padding: 16px;
     li {
       cursor: pointer;
       text-transform: uppercase;
+      padding: 16px;
     }
   }
   .hamburger {
       display: none;
-      margin-right: 1rem;
       font-size: 16px;
       cursor: pointer;
     }
   @media (max-width: 720px){
+    margin: 1rem auto;
+    justify-content: space-between;
+    width: 80vw;
     ul {
       display: none;
     }

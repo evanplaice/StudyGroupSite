@@ -12,6 +12,7 @@ const Navbar = () => {
       </ul>
 
       <LogoIcon height="100" width="100" />
+      <button className="hamburger">Menu</button>
 
       <ul>
         <li>About</li>
@@ -22,7 +23,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <button className="hamburger">Menu</button>
     </NavbarStyles>
   )
 }
