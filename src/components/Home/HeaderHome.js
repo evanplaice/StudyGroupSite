@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import styled from "@emotion/styled";
 import { Link } from "@reach/router";
 
+import Nav from "../NavBar/Nav";
+
 export default class HeaderHome extends Component {
   render() {
     return (
       <Container>
-        <nav>
-          <Link to="/">Home</Link>{" "}
-        </nav>
+        <Nav />
         <Title>Junior Projects Night</Title>
       </Container>
     );
@@ -18,12 +18,13 @@ export default class HeaderHome extends Component {
 // CSS-in-JS styled components
 const Title = styled.h2`
   color: #000;
+  display: flex;
 `;
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 `;
