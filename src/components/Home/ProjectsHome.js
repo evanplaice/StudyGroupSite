@@ -3,13 +3,23 @@ import styled from "@emotion/styled";
 import { Link } from "@reach/router";
 
 export default class ProjectsHome extends Component {
+
+  state = {
+    projectDocLink: "https://google.com"
+  }
+
+  onButtonClick = () => {
+    window.open(this.projectDocLink);
+  }
+  
   render() {
     return (
       <Container>
-        <nav>
-          <Link to="/">Home</Link>{" "}
-        </nav>
-        <Title>Our Projects</Title>
+        <Title>
+          <button className = "ui basic button" onClick={this.onButtonClick}>
+            Click here to open projects doc
+          </button>
+        </Title>
       </Container>
     );
   }
