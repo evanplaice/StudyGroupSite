@@ -9,7 +9,7 @@ Our key motivation for the project is to create a site where members can see upd
 ## Tech Stack
 
 - React (project started with create-react-app)
-- CSS: Sass and styled components
+- CSS: Sass, styled components and semantic-ui
 - Express
 - Nodejs
 
