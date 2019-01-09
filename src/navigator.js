@@ -11,7 +11,7 @@ export default class Navigator extends Component {
       <div>
         <Router>
           <Home path="/" />
-          <About path="/about" />
+          <About path="/About" />
         </Router>
       </div>
     );

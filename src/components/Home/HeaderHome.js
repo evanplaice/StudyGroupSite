@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "@emotion/styled";
-import { Link } from "@reach/router";
 
 import Nav from "../NavBar/Nav";
 
