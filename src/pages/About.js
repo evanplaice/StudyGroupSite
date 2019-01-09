@@ -44,9 +44,14 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #000;
 `;
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin-top: 50px;
+  color: #fff;
+`;
 const Par = styled.p`
   max-width: 600px;
+  color: #fff;
 `;
 const Card = styled.div``;
