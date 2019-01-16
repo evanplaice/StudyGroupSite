@@ -11,7 +11,7 @@ app.use(function(req, res, next) {
 
 const Pool = require('pg').Pool
 const config = {
-  user: 'blog',
+  user: 'StudyGroupSite',
   host: '127.0.0.1',
   database: 'blog',
   password: 's00p3r.s3cr37',
@@ -20,12 +20,33 @@ const config = {
 const pool = new Pool(config);
 module.exports =  pool;
 
+
+const db = new (require("./db/posgresql"))(config);
+console.log(db.parseGet({
+    select: ['table1.row1','table2.row2','table2.row1','table3.row1'],
+    where: ['AND',
+        ['NOT','table1.id','=', 'value'],
+        ['table2.id','=', 'value'],
+        ['OR',
+            ['table3.id','=', 'value'],
+            ['table4.id','=', 'value'],
+        ]
+    ]
+}));
+
 const dataValidation = require("./dataValidation");
 app.get('/projects', (req, res) => {
     const { body, params, query } = req;
     let GithubProject = [];
     if ( query ) {
-        { start, size, orderBy } = query;
+        const { start, limit, orderBy } = query;
+        /* 
+        orderBy: {
+            name: 0,
+            created: 1,
+            updated: 2,
+        }
+        */
         GithubProjects = [{
             id: 0,
             name: "Test",
@@ -34,9 +55,7 @@ app.get('/projects', (req, res) => {
             added: null,
             updated: null,
         }];
-        res.send(query);
-    } else {
-			res.send([]);
+
     }
     res.send({GithubProjects});
 });
