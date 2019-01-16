@@ -5,7 +5,7 @@ import { Link } from "@reach/router";
 export default class ProjectsHome extends Component {
 
   state = {
-    projectDocLink: "https://google.com"
+    projectDocLink: "https://docs.google.com/spreadsheets/d/1FJI_td4uxTPaLpxDB704zghNhy9BLfzZ7HuVk8byv14/edit#gid=0"
   }
 
   onButtonClick = () => {
