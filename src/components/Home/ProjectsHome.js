@@ -9,17 +9,18 @@ export default class ProjectsHome extends Component {
   }
 
   onButtonClick = () => {
-    window.open(this.projectDocLink);
+    window.open(this.state.projectDocLink);
   }
   
   render() {
     return (
       <Container>
-        <Title>
-          <button className = "ui basic button" onClick={this.onButtonClick}>
-            Click here to open projects doc
-          </button>
+        <Title> 
+          Projects 
         </Title>
+        <button className = "ui basic button" onClick={this.onButtonClick}>
+            Click here to open projects doc
+        </button>
       </Container>
     );
   }
@@ -34,6 +35,7 @@ const Container = styled.div`
   width: 100vw;
   background-color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
